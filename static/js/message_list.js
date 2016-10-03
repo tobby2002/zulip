@@ -339,15 +339,15 @@ exports.MessageList.prototype = {
     },
 
     subscribed_bookend_content: function (stream_name) {
-        return "--- Subscribed to stream " + stream_name + " ---";
+        return "--- 채널 " + stream_name + " 구독하기 ---";
     },
 
     unsubscribed_bookend_content: function (stream_name) {
-        return "--- Unsubscribed from stream " + stream_name + " ---";
+        return "--- 채널 " + stream_name + " 구독해제하기 ---";
     },
 
     not_subscribed_bookend_content: function (stream_name) {
-        return "--- Not subscribed to stream " + stream_name + " ---";
+        return "--- 채널 " + stream_name + " 에 구독되지 않습니다 ---";
     },
 
     // Maintains a trailing bookend element explaining any changes in

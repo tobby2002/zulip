@@ -52,7 +52,7 @@
         {{/if}}
 
         <div class="input-group">
-          <input type="submit" class="button green" name="change_settings" value="Save Changes" />
+          <input type="submit" class="button green" name="change_settings" value="{{t 'Save Changes' }}" />
         </div>
 
         <div class="input-group">
@@ -90,14 +90,7 @@
           </div>
           <div class="modal-body">
             <p>
-            The following is a few of the languages we have started to
-            support or are hoping to support in the near future. We would
-            love help translating; if you're interested in helping, make an
-            account at <a href='https://www.transifex.com/zulip/zulip/'>
-            https://www.transifex.com/zulip/zulip/</a>, and sign up for a
-            language! You can also request any language we don't currently
-            have. It only takes a few hours to translate the most important
-            parts of the app.
+                {{t "Select Default Language Content" }}
             </p>
             <div>
               <table>
@@ -298,7 +291,7 @@
 
     <div class="add-new-bot-box grey-bg">
       <form id="create_bot_form" class="form-horizontal no-padding">
-        <h4 class="new-bot-section-title light no-margin">Add a New Bot</h4>
+        <h4 class="new-bot-section-title light no-margin">봇추가하기</h4>
         <div class="new-bot-form">
           <div class="input-group">
             <label for="create_bot_name">{{t "Full name" }}</label>

@@ -608,6 +608,10 @@ msgstr ""
 msgid "Starred messages"
 msgstr "별톡"
 
+#: templates/zerver/features.html:119 templates/zerver/left-sidebar.html:8
+msgid "Subscribe, add, or configure streams"
+msgstr "채널 구독·추가·설정"
+
 #: templates/zerver/features.html:120
 msgid ""
 "Keep a todo list or keep track of interesting\n"
@@ -994,11 +998,11 @@ msgstr "톡만들기"
 
 #: templates/zerver/keyboard_shortcuts.html:57
 msgid "Reply to message"
-msgstr "톡 답신하기"
+msgstr "리톡하기"
 
 #: templates/zerver/keyboard_shortcuts.html:61
 msgid "Reply to author"
-msgstr "저자에게 톡"
+msgstr "리톡하기"
 
 #: templates/zerver/keyboard_shortcuts.html:73
 msgid "Send message"
@@ -1010,27 +1014,27 @@ msgstr "작성취소"
 
 #: templates/zerver/keyboard_shortcuts.html:86
 msgid "Narrowing"
-msgstr ""
+msgstr "전용보기"
 
 #: templates/zerver/keyboard_shortcuts.html:91
 msgid "Narrow by stream"
-msgstr ""
+msgstr "채널 전용보기"
 
 #: templates/zerver/keyboard_shortcuts.html:95
 msgid "Narrow by topic"
-msgstr ""
+msgstr "토픽 전용보기"
 
 #: templates/zerver/keyboard_shortcuts.html:99
 msgid "Narrow to all private messages"
-msgstr ""
+msgstr "모든 미스터톡 전용보기"
 
 #: templates/zerver/keyboard_shortcuts.html:103
 msgid "Cycle between stream narrows"
-msgstr ""
+msgstr "채널전용보기 순서대로보기"
 
 #: templates/zerver/keyboard_shortcuts.html:107
 msgid "Return to home view"
-msgstr ""
+msgstr "홈으로 돌아가기"
 
 #: templates/zerver/keyboard_shortcuts.html:114
 msgid "Menus"
@@ -1038,21 +1042,21 @@ msgstr "메뉴"
 
 #: templates/zerver/keyboard_shortcuts.html:119
 msgid "Open message actions menu"
-msgstr ""
+msgstr "톡액션메뉴 열기"
 
 #: templates/zerver/keyboard_shortcuts.html:123
 msgid "Edit a message you sent"
-msgstr ""
+msgstr "보낸톡 편집하기"
 
 #: templates/zerver/keyboard_shortcuts.html:127
 msgid "Show these keyboard shortcuts"
-msgstr ""
+msgstr "단축키보기"
 
 #: templates/zerver/keyboard_shortcuts.html:133
 #: templates/zerver/markdown_help.html:98
 #: templates/zerver/search_operators.html:79
 msgid "Close"
-msgstr ""
+msgstr "닫기"
 
 #: templates/zerver/left-sidebar.html:6
 msgid "Home"
@@ -1076,7 +1080,7 @@ msgstr "모든채널"
 
 #: templates/zerver/left-sidebar.html:32
 msgid "SHARE THE LOVE"
-msgstr ""
+msgstr "사랑공유"
 
 #: templates/zerver/left-sidebar.html:36
 msgid "Thanks!"
@@ -1084,12 +1088,13 @@ msgstr "땡규!"
 
 #: templates/zerver/left-sidebar.html:36
 msgid "A hand-crafted, artisanal invite is on the way"
-msgstr ""
+msgstr "초대를 할 수 있습니다"
 
 #: templates/zerver/left-sidebar.html:40
 msgid ""
 "Know someone who would love Zulip for their company or group? Invite 'em!"
 msgstr ""
+"미스터톡을 사랑하는 누구나 초대할 수 있습니다? 회사,그룹,팀등 바로 초대해 주세요!"
 
 #: templates/zerver/left-sidebar.html:45
 msgid ""
@@ -1123,7 +1128,7 @@ msgstr ""
 
 #: templates/zerver/login.html:19
 msgid "the Zulip open source project website"
-msgstr ""
+msgstr "미스터톡 인공지능 톡메신져"
 
 #: templates/zerver/login.html:45
 msgid "Mr.Talk Login"
@@ -1147,7 +1152,7 @@ msgstr "Mr.TALK에서 고객님의 도메인이 등록되지 않았습니다"
 
 #: templates/zerver/login.html:77
 msgid "You've already registered with this email address. Please log in below"
-msgstr ""
+msgstr "이미 등록된 이메일 유저입니다. 아래에서 로그인 하세요"
 
 #: templates/zerver/login.html:107 templates/zerver/register.html:69
 #: templates/zerver/reset_confirm.html:27
@@ -2020,188 +2025,188 @@ msgstr ""
 
 #: zerver/views/__init__.py:1043
 msgid "Invalid message ID"
-msgstr ""
+msgstr "무효한 톡 ID"
 
 #: zerver/views/__init__.py:1084
 msgid "Password auth is disabled in your team."
-msgstr ""
+msgstr "패스워드인증은 당신팀에서는 불가합니다"
 
 #: zerver/views/__init__.py:1089
 msgid "This user is not registered; do so from a browser."
-msgstr ""
+msgstr "브라우저로 등록되지 않은 유정입니다"
 
 #: zerver/views/__init__.py:1091 zerver/views/__init__.py:1111
 msgid "Your username or password is incorrect."
-msgstr ""
+msgstr "유저명과 패스워드가 불일치 합니다"
 
 #: zerver/views/__init__.py:1118
 msgid "GOOGLE_CLIENT_ID is not configured"
-msgstr ""
+msgstr "GOOGLE_CLIENT_ID가 설정되지 않았습니다"
 
 #: zerver/views/__init__.py:1166
 msgid "No email address specified"
-msgstr ""
+msgstr "지정된 메일주소가 없습니다"
 
 #: zerver/views/__init__.py:1168
 msgid "Insufficient invites"
-msgstr ""
+msgstr "잘못된 초대하기"
 
 #: zerver/views/messages.py:55
 msgid "Invalid narrow operator: {}"
-msgstr ""
+msgstr "무효한 전용보기 오퍼레이터: {}"
 
 #: zerver/views/messages.py:612 zerver/views/users.py:115
 #, python-format
 msgid "No such stream '%s'"
-msgstr ""
+msgstr "채널 %s 이 없습니다"
 
 #: zerver/views/messages.py:619
 #, python-format
 msgid "No such topic '%s'"
-msgstr ""
+msgstr "토픽 %s 이 없습니다"
 
 #: zerver/views/messages.py:749
 #, python-format
 msgid "Unknown domain %s"
-msgstr ""
+msgstr "알수없는 도메인 %s"
 
 #: zerver/views/messages.py:769
 msgid "Missing sender"
-msgstr ""
+msgstr "보내는자 분실"
 
 #: zerver/views/messages.py:775
 msgid "Invalid mirrored message"
-msgstr ""
+msgstr "무표한 mirrored 톡"
 
 #: zerver/views/messages.py:777
 msgid "Invalid mirrored realm"
-msgstr ""
+msgstr "무효한 mirrored realm"
 
 #: zerver/views/messages.py:780
 msgid "IRC stream names must start with #"
-msgstr ""
+msgstr "IRC 채널명을 #으로 시작해야 합니다"
 
 #: zerver/views/messages.py:805
 msgid "Your organization has turned off message editing."
-msgstr ""
+msgstr "당신의 조직이 톡편집을 닫은 상태입니다"
 
 #: zerver/views/messages.py:810
 msgid "Unknown message id"
-msgstr ""
+msgstr "알수없는 톡ID"
 
 #: zerver/views/messages.py:822
 msgid "You don't have permission to edit this message"
-msgstr ""
+msgstr "이톡을 편집할 권한이 없습니다"
 
 #: zerver/views/messages.py:833
 msgid "The time limit for editing this message has past"
-msgstr ""
+msgstr "이톡을 편집시간을 초과하였습니다"
 
 #: zerver/views/messages.py:836
 msgid "Nothing to change"
-msgstr ""
+msgstr "변경된 사항이 없습니다"
 
 #: zerver/views/messages.py:845 zerver/views/webhooks/ifttt.py:23
 msgid "Content can't be empty"
-msgstr ""
+msgstr "내용이 빈공백일 수 없습니다"
 
 #: zerver/views/messages.py:849
 msgid "We were unable to render your updated message"
-msgstr ""
+msgstr "당신이 변경한 톡을 렌더링 할 수 없습니다"
 
 #: zerver/views/messages.py:862
 msgid "No such message"
-msgstr ""
+msgstr "톡이 없습니다"
 
 #: zerver/views/messages.py:865
 msgid "Message was not sent by you"
-msgstr ""
+msgstr "톡이 당신에 의해 보내지지 않았습니다"
 
 #: zerver/views/presence.py:29
 #, python-format
 msgid "Invalid presence status: %s"
-msgstr ""
+msgstr "잘못된 부재상태: %s"
 
 #: zerver/views/push_notifications.py:18 zerver/views/push_notifications.py:48
 msgid "Empty or invalid length token"
-msgstr ""
+msgstr "빈공간 혹은 잘못된 길이 토큰"
 
 #: zerver/views/push_notifications.py:54
 msgid "Token does not exist"
-msgstr ""
+msgstr "토큰이 존재하지 않습니다"
 
 #: zerver/views/realm.py:37 zerver/views/user_settings.py:124
 #, python-format
 msgid "Invalid language '%s'"
-msgstr ""
+msgstr "잘못된 언어 %s"
 
 #: zerver/views/streams.py:58 zerver/views/streams.py:297
 #, python-format
 msgid "Stream name (%s) too long."
-msgstr ""
+msgstr "채널명 %s 의 길이초과"
 
 #: zerver/views/streams.py:60 zerver/views/streams.py:299
 #, python-format
 msgid "Invalid stream name (%s)."
-msgstr ""
+msgstr "잘못된 채널명 %s"
 
 #: zerver/views/streams.py:72
 msgid "User cannot create streams."
-msgstr ""
+msgstr "유저는 채널을 생성할 수 없습니다"
 
 #: zerver/views/streams.py:74
 #, python-format
 msgid "Stream(s) (%s) do not exist"
-msgstr ""
+msgstr "채널 %s 이 존재하지 않습니다"
 
 #: zerver/views/streams.py:124
 msgid "No such stream name"
-msgstr ""
+msgstr "채널명이 없습니다"
 
 #: zerver/views/streams.py:127 zerver/views/streams.py:230
 msgid "Cannot administer invite-only streams this way"
-msgstr ""
+msgstr "이방법으로 administer는 초대전용 채널이 만들수 없습니다 "
 
 #: zerver/views/streams.py:193
 msgid "Nothing to do. Specify at least one of \"add\" or \"delete\"."
-msgstr ""
+msgstr "적어도 추가하기 혹은 삭제하기를 선택해 주세요"
 
 #: zerver/views/streams.py:221
 msgid "This action requires administrative rights"
-msgstr ""
+msgstr "이 액션은 어드민 권한이 필요합니다"
 
 #: zerver/views/streams.py:308
 #, python-format
 msgid "Unable to access stream (%s)."
-msgstr ""
+msgstr "채널 %s 에 억세스할수 없습니다"
 
 #: zerver/views/streams.py:314
 msgid ""
 "You can only invite other Zephyr mirroring users to invite-only streams."
-msgstr ""
+msgstr "다른 Zephyr mirroring 유저들만 읽기전용 채널에 초대할 수 있습니다"
 
 #: zerver/views/streams.py:407
 #, python-format
 msgid "Stream does not exist: %s"
-msgstr ""
+msgstr "채널 %s 이 존재하지 않습니다"
 
 #: zerver/views/streams.py:445
 msgid "Invalid characters in stream name"
-msgstr ""
+msgstr "채널명으로 금지문자 입니다"
 
 #: zerver/views/streams.py:462
 #, python-format
 msgid "Invalid stream %s"
-msgstr ""
+msgstr "무효한 채널 %s"
 
 #: zerver/views/streams.py:468
 #, python-format
 msgid "Not subscribed to stream %s"
-msgstr ""
+msgstr "채널 %s 에 구독되어 있지 않습니다"
 
 #: zerver/views/streams.py:492
 msgid "Invalid verb"
-msgstr ""
+msgstr "무효한 verb 입니다"
 
 #: zerver/views/streams.py:506
 #, python-format
@@ -2276,19 +2281,19 @@ msgstr "이메일 '%s' 이 이미 사용 중 입니다"
 #: zerver/views/webhooks/codeship.py:37 zerver/views/webhooks/crashlytics.py:37
 #: zerver/views/webhooks/helloworld.py:30 zerver/views/webhooks/updown.py:28
 msgid "Missing key {} in JSON"
-msgstr ""
+msgstr "JSON {} 에 키가 없습니다"
 
 #: zerver/views/webhooks/freshdesk.py:132 zerver/views/webhooks/semaphore.py:37
 #: zerver/views/webhooks/semaphore.py:44 zerver/views/webhooks/semaphore.py:55
 #: zerver/views/webhooks/stash.py:34
 #, python-format
 msgid "Missing key %s in JSON"
-msgstr ""
+msgstr "JSON에 분실키 %s"
 
 #: zerver/views/webhooks/freshdesk.py:141
 #, python-format
 msgid "Malformed event %s"
-msgstr ""
+msgstr "잘못된 이벤트 %s"
 
 #: zerver/views/webhooks/ifttt.py:21
 msgid "Subject can't be empty"
@@ -2346,7 +2351,7 @@ msgstr "잘못된 Kerberos 캐시"
 
 #: zerver/views/zephyr.py:52
 msgid "We were unable to setup mirroring for you"
-msgstr ""
+msgstr "미러링설정을 할 수 없습니다"
 
 #: zilencer/views.py:98
 msgid "Invalid type parameter"
@@ -2354,4 +2359,4 @@ msgstr "잘못된 파라미터 타입"
 
 #: zilencer/views.py:119
 msgid "Cannot determine endpoint for user."
-msgstr ""
+msgstr "유저의 endpoint 를 정할 수 없습니다"
