@@ -184,7 +184,7 @@ for setting_name, setting_val in six.iteritems(DEFAULT_SETTINGS):
         vars()[setting_name] = setting_val
 
 # Extend ALLOWED_HOSTS with localhost (needed to RPC to Tornado).
-ALLOWED_HOSTS += ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS += ['127.0.0.1', 'localhost','zulip.mrtalk.co.kr','mrtalk.co.kr']
 
 # These are the settings that we will check that the user has filled in for
 # production deployments before starting the app.  It consists of a series
@@ -547,7 +547,7 @@ if EMAIL_GATEWAY_PATTERN != "":
 DEPLOYMENT_ROLE_KEY = get_secret("deployment_role_key")
 
 if PRODUCTION:
-    FEEDBACK_TARGET = "https://mrtalk.co.kr/api"
+    FEEDBACK_TARGET = "https://zulip.mrtalk.co.kr/api"
 else:
     FEEDBACK_TARGET = "http://localhost:9991/api"
 
@@ -981,8 +981,8 @@ LOGIN_REDIRECT_URL = '/'
 POLL_TIMEOUT = 90 * 1000
 
 # iOS App IDs
-ZULIP_IOS_APP_ID = 'com.zulip.Zulip'
-DBX_IOS_APP_ID = 'com.dropbox.Zulip'
+ZULIP_IOS_APP_ID = 'kr.co.mrtalk.Zulip'
+DBX_IOS_APP_ID = 'kr.co.mrtalk.dropbox'
 
 ########################################################################
 # SSO AND LDAP SETTINGS
@@ -1054,4 +1054,4 @@ if PRODUCTION:
 # This is a debugging option only
 PROFILE_ALL_REQUESTS = False
 
-CROSS_REALM_BOT_EMAILS = set(('feedback@zulip.com', 'notification-bot@zulip.com'))
+CROSS_REALM_BOT_EMAILS = set(('feedback@mrtalk.co.kr', 'notification-bot@mrtalk.co.kr'))

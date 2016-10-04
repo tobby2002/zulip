@@ -357,9 +357,9 @@ function finale(skip) {
     var alert_contents;
 
     if (page_params.prompt_for_invites) {
-        alert_contents = "<i class='icon-vector-heart alert-icon'></i>It's lonely in here! <a href='#invite-user' data-toggle='modal'>Invite some users</a>.";
+        alert_contents = "<i class='icon-vector-heart alert-icon'></i>Mr.Talk을 친구와 함께 즐겁게 사용해 보세요! <a href='#invite-user' data-toggle='modal'>친구초대하기</a>.";
     } else {
-        alert_contents = "<i class='icon-vector-desktop alert-icon'></i>What's better than " + page_params.product_name + " in your browser? The <a href='/apps' target='_blank'>"+ page_params.product_name + " desktop app</a>!";
+        alert_contents = "<i class='icon-vector-desktop alert-icon'></i>" + page_params.product_name + " 을 PC브라우저에서 사용하시지 않겠습니까? <a href='/apps' target='_blank'>"+ page_params.product_name + " 데스크탑앱</a>!";
     }
     show_app_alert(alert_contents);
 

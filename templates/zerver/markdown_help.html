@@ -14,58 +14,58 @@
 
         <tbody>
         <tr>
-          <td>**bold**</td>
-          <td><b>bold</b></td>
+          <td>**볼드체**</td>
+          <td><b>볼드체</b></td>
         </tr>
         <tr>
-          <td>[{{product_name}}](https://zulip.com)</td>
-          <td><a href="https://zulip.com" target="_blank">{{product_name}}</a></td>
+          <td>[{{product_name}}](https://mrtalk.co.kr)</td>
+          <td><a href="https://mrtalk.co.kr" target="_blank">{{product_name}}</a></td>
         </tr>
         <tr>
-          <td>* Archimedes<br/>
-            * Bohr<br/>
-            * Curie
+          <td>* 첫째<br/>
+            * 둘째<br/>
+            * 세째
           </td>
           <td>
             <ul>
-              <li>Archimedes</li>
-              <li>Bohr</li>
-              <li>Curie</li>
+              <li>첫째</li>
+              <li>둘째</li>
+              <li>세째</li>
             </ul>
           </td>
         </tr>
         <tr>
-          <td>:heart: (and <a href="http://www.emoji-cheat-sheet.com/" target="_blank">many others</a>, from the <a href="https://code.google.com/p/noto/" license="/static/third/gemoji/images/emoji/NOTICE" target="_blank">Noto Project</a>)</td>
+          <td>:heart: (참고 <a href="http://www.emoji-cheat-sheet.com/" target="_blank">다른이모티콘</a>, 참고 <a href="https://code.google.com/p/noto/" license="/static/third/gemoji/images/emoji/NOTICE" target="_blank">NOTO프로젝트</a>)</td>
           <td><img alt=":heart:" class="emoji" src="/static/third/gemoji/images/emoji/heart.png" title=":heart:" /></td>
         </tr>
         <tr>
-          <td>@**Joe Smith**<br/>
-            (autocompletes from @joe)</td>
-          <td><span class="user-mention">@Joe Smith</span> (notifies Joe Smith)</td>
+          <td>@**Mr.TALK**<br/>
+            (@Miss.TALK 자동완성)</td>
+          <td><span class="user-mention">@Miss.TALK</span> (미스톡에 보냅니다)</td>
         </tr>
         <tr>
           <td>@**all**</td>
-          <td><span class="user-mention">@all</span> (notifies all recipients)</td>
+          <td><span class="user-mention">@all</span> (모든 수신자에게 보냅니다)</td>
         </tr>
         <tr>
-          <td>Some inline `code`</td>
-          <td>Some inline <code>code</code></td>
+          <td>일부 인코드 `code`</td>
+          <td>일부 인코드 <code>code</code></td>
         </tr>
         <tr>
           <td class="preserve_spaces">```
-def zulip():
+def mrtalk():
     print "{{product_name}}"
 ```</td>
-          <td><pre>def zulip():
+          <td><pre>def mrtalk():
     print "{{product_name}}"</pre></td>
         </tr>
         <tr>
           <td class="preserve_spaces">``` .py
-def zulip():
+def mrtalk():
     print "{{product_name}}"
 ```</td>
           <td>
-            <div class="codehilite"><pre><span class="k">def</span> <span class="nf">zulip</span><span class="p">():</span>
+            <div class="codehilite"><pre><span class="k">def</span> <span class="nf">mrtalk</span><span class="p">():</span>
     <span class="k">print</span> <span class="s">"{{product_name}}"</span></pre></div>
           </td>
         </tr>
@@ -73,15 +73,15 @@ def zulip():
           <td colspan="2">{% trans %}You can also make a code block by indenting each line with 4 spaces.{% endtrans %}</td>
         </tr>
         <tr>
-          <td>&gt; Quoted</td>
-          <td><blockquote>Quoted</blockquote></td>
+          <td>&gt; 인용</td>
+          <td><blockquote>인용</blockquote></td>
 
         </tr>
         <tr>
           <td class="preserve_spaces">``` quote
-Quoted block
+인용된 블럭
 ```</td>
-          <td><blockquote><p>Quoted block</p></blockquote></td>
+          <td><blockquote><p>인용된 블럭</p></blockquote></td>
         </tr>
         <tr>
           <td colspan="2">{% trans %}You can also make <a target="_blank"

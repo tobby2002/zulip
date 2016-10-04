@@ -42,7 +42,7 @@
           <li>
             <div id="sub_setting_not_in_home_view" class="sub_setting_checkbox sub-mute-setting">
               <input id="mutestream-{{stream_id}}" class="sub_setting_control" type="checkbox" tabindex="-1" {{#unless in_home_view}}checked{{/unless}} />
-              <label class="subscription-control-label">Mute stream</label>
+              <label class="subscription-control-label">{{t "Mute stream" }}</label>
               <p class="mute-note {{#if in_home_view}}hide-mute-note{{/if}}">{{t "Muted streams don't show up in your home view or generate notifications unless you are mentioned." }}</p>
             </div>
           </li>
@@ -78,7 +78,7 @@
       </div>
       {{#if_and subscribed email_address}}
       <div class="stream-email-box">
-          <span class="sub_settings_title">Email address <i class="icon-vector-question-sign stream-email-hint" id="email-address-hint-{{stream_id}}"></i></span>
+          <span class="sub_settings_title">{{t "Email address" }} <i class="icon-vector-question-sign stream-email-hint" id="email-address-hint-{{stream_id}}"></i></span>
       <div class="stream-email">
           <span class="email-address">{{email_address}}</span>
       </div>

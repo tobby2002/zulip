@@ -1922,7 +1922,7 @@ def do_create_realm(domain, name, restricted_to_domain=True):
         realm.save(update_fields=['notifications_stream'])
 
         # Include a welcome message in this notifications stream
-        product_name = "Zulip"
+        product_name = "Mr.Talk"
         content = """Hello, and welcome to %s!
 
 This is a message on stream `%s` with the topic `welcome`. We'll use this stream for
