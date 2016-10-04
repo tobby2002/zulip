@@ -956,7 +956,7 @@ def home(request):
     if user_profile.realm.invite_by_admins_only and not user_profile.is_realm_admin:
         show_invites = False
 
-    product_name = "Zulip"
+    product_name = "Mr.Talk"
     page_params['product_name'] = product_name
     request._log_data['extra'] = "[%s]" % (register_ret["queue_id"],)
     response = render_to_response('zerver/index.html',
