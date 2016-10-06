@@ -1334,10 +1334,6 @@ msgstr "마지막 절차입니다"
 msgid "Tell us a bit about yourself"
 msgstr "추가정보를 기입해 주세요"
 
-#: templates/zerver/register.html:125
-msgid "Register"
-msgstr "등록하기"
-
 #: templates/zerver/register.html:33
 msgid "Full name"
 msgstr "성명"
