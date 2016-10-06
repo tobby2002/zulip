@@ -189,7 +189,7 @@ ALLOWED_HOSTS += ['127.0.0.1', 'localhost','zulip.mrtalk.co.kr','mrtalk.co.kr']
 # These are the settings that we will check that the user has filled in for
 # production deployments before starting the app.  It consists of a series
 # of pairs of (setting name, default value that it must be changed from)
-REQUIRED_SETTINGS = [("EXTERNAL_HOST", "zulip.example.com"),
+REQUIRED_SETTINGS = [("EXTERNAL_HOST", "zulip.mrtalk.co.kr"),
                      ("ZULIP_ADMINISTRATOR", "zulip-admin@example.com"),
                      # SECRET_KEY doesn't really need to be here, in
                      # that we set it automatically, but just in

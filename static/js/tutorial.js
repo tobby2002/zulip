@@ -382,18 +382,18 @@ function finale(skip) {
         }
 
         if (stream_data.in_home_view(page_params.notifications_stream)) {
-            send_delayed_stream_message(page_params.notifications_stream, "welcome", "Practice sending sending some messages here, or starting a new topic.", 15);
-            send_delayed_stream_message(page_params.notifications_stream, page_params.product_name + " tips", "Here's a message on a new topic: `" + page_params.product_name + " tips`.\n\nAs you settle into " + page_params.product_name + ", customize your account and notifications on your [Settings page](#settings).", 30);
-            send_delayed_stream_message(page_params.notifications_stream, page_params.product_name + " tips", "You might also enjoy:\n\n* Our lightweight !modal_link(#markdown-help, message formatting) (including emoji! :thumbsup:)\n* !modal_link(#keyboard-shortcuts, Keyboard shortcuts)\n* [Desktop and mobile apps](/apps)", 40);
+            send_delayed_stream_message(page_params.notifications_stream, "환영합니다.", "여기에 시범적으로 톡메시지를 보내 보세요, 또는 다른 새토픽을 만들어 시작해 보세요.", 15);
+            send_delayed_stream_message(page_params.notifications_stream, page_params.product_name + " 사용팁", "여기 새토픽에 톡메시지가 있습니다: `" + page_params.product_name + " 사용팁`.\n\n" + page_params.product_name + "의 설정페이지를 통해서, 자신의 계정과 알림을 커스터미아징 할 수 있습니다 [설정페이지가기](#settings).", 30);
+            send_delayed_stream_message(page_params.notifications_stream, page_params.product_name + " 사용팁", "다양한 방법으로 특을 즐겨보세요:\n\n* 다양한 !modal_link(#markdown-help, 톡메시지 사용법보기) (이모티콘 사용예! :thumbsup:)\n* !modal_link(#keyboard-shortcuts, 키보드단축키)\n* [데스크탑·모바일앱](/apps)", 40);
         }
 
         if (work_stream !== undefined) {
-            send_delayed_stream_message(work_stream, "projects", "This is a message on stream `" + work_stream + "` with the topic `projects`.", 60);
-            send_delayed_stream_message(work_stream, "projects", "Take a peek at our [integrations](/integrations). Now's a great time to set one up!", 65);
+            send_delayed_stream_message(work_stream, "projects", "이톡은 채널 `" + work_stream + " ` 토픽 `projects` 에서의 톡메시지 입니다.", 60);
+            send_delayed_stream_message(work_stream, "projects", "Mr.TALK과 외부시스템과 통합도 가능합니다 [Mr.TALK과 외부통합](/integrations). 지금 멋진 시간을 보내세요!", 65);
         }
 
         if (stream_data.in_home_view("social")) {
-            send_delayed_stream_message("social", "cute animals", "This is a message on stream `social` with the topic `cute animals`. Try uploading or pasting in some pictures. Here's a [guinea pig](/static/images/cute/guinea.jpg) to get you started:", 75);
+            send_delayed_stream_message("social", "cute animals", "이번 톡은 채널 `social` 의 토픽 `cute animals`에서의 메시지입니다. 사진 또는 이미지를 시범삼아 업로드 또는 붙여보세요. 여기에 [기니돼지](/static/images/cute/guinea.jpg) 로 시작해보세요:", 75);
         }
     }
 }

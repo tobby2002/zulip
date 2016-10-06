@@ -67,7 +67,7 @@
   "Your Bots": "봇리스트",
   "It's been a while! Since you were last here, you received <b>__unread_count__</b> new messages.": "한 동안 방문이 없었습니다! <b>__unread_count__</b>개의 읽지 않은 톡이 있습니다.",
   "Your Account": "나의 계정",
-  "\n        <b>Streams</b> are like chat rooms or mailing lists. You can easily\n        <b>join</b>, <b>leave</b>, and <b>make</b> them.\n        ": "\n        <b>채널</b>은 챗룸 또는 메일링리스트와 유사합니다. \n        손쉽게 채널에 <b>가입하기</b>, <b>나가기</b>, and <b>만들기</b>가 가능합니다.\n        ",
+  "\n        <b>Streams</b> are like chat rooms or mailing lists. You can easily\n        <b>join</b>, <b>leave</b>, and <b>make</b> them.\n        ": "\n        <b>채널</b>은 챗룸 또는 메일링리스트와 유사합니다. \n        손쉽게 채널에 <b>가입하기</b>, <b>나가기</b> , <b>만들기< /b>가 가능합니다.\n        ",
   "Mark all messages in <b>__stream.name__</b> as read": "<b>__stream.name__</b> 채널의 모든 톡을 읽음으로 마크하기",
   "Next": "다음",
   "Alert Word": "경고문",

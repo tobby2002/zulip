@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 from __future__ import absolute_import
 from __future__ import print_function
 from typing import (
@@ -1923,10 +1925,9 @@ def do_create_realm(domain, name, restricted_to_domain=True):
 
         # Include a welcome message in this notifications stream
         product_name = "Mr.Talk"
-        content = """Hello, and welcome to %s!
+        content = """%s에 환영합니다!
 
-This is a message on stream `%s` with the topic `welcome`. We'll use this stream for
-system-generated notifications.""" % (product_name, notifications_stream.name,)
+이메시지는 채널 `%s` 〉 토픽 `welcome` 에 보내는 메시지입니다.  Mr.Talk은 시스템 전반에 관한 알림으로  이채널을 통해 전달합니다.""" % (product_name, notifications_stream.name,)
         msg = internal_prep_message(settings.WELCOME_BOT, 'stream',
                                      notifications_stream.name, "welcome",
                                      content, realm=realm)
