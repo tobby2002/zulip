@@ -3,30 +3,30 @@
 {# API information page #}
 
 {% block portico_content %}
-    <h1 class="api-page-header">We hear you like APIs...</h1>
+    <h1 class="api-page-header">{{ _('We hear you like APIs...') }}</h1>
 
-    <p>We have a <a href="/api/endpoints">well-documented API</a> that allows you to build custom integrations, in addition to our <a href="/integrations">existing integrations</a>. For ease-of-use, we've created a Python module that you can drop in to a project to start interacting with our API.</p>
+    <p>{{ _('We have a') }} <a href="/api/endpoints">{{ _('well-documented API') }}</a> {{ _('that allows you to build custom integrations, in addition to our') }} <a href="/integrations">{{ _('existing integrations') }}</a>. {{ _('For ease-of-use, we have created a Python module that you can drop in to a project to start interacting with our API') }}.</p>
 
-    <p><strong>Don't want to make it yourself?</strong> Zulip <a href="/integrations">already integrates with lots of services</a>.</p>
+    <p><strong>{{ _('Do not want to make it yourself?') }}</strong> Mr.TALK <a href="/integrations">{{ _('already integrates with lots of services') }}</a>.</p>
 
     <br/>
     <div class="centered-button">
-       <a href="https://www.zulip.com/dist/api/python-zulip_0.2.5.tar.gz" class="btn btn-large btn-primary"><i class="icon-vector-download"></i> Download Python bindings and examples<span class="button-muted">Version 0.2.5</span></a>
+       <a href="https://www.zulip.com/dist/api/python-zulip_0.2.5.tar.gz" class="btn btn-large btn-primary"><i class="icon-vector-download"></i> {{ _('Download Python bindings and examples') }}<span class="button-muted">Version 0.2.5</span></a>
     </div>
 
 
     <p>&nbsp;</p>
 
-    <h3>Installation instructions</h3>
-    <p>This package uses <tt>distutils</tt>, so you can just run <code>python setup.py install</code> after downloading.</p>
-    <p>If you have <tt>setuptools</tt> installed on your system then the application's dependencies will be downloaded and installed automatically from <a href="https://pypi.python.org/">PyPI</a>. Otherwise, you'll need to make sure you have these Python libraries installed:</p>
+    <h3>{{ _('Installation instruction') }}</h3>
+    <p>{{ _('This package uses') }} <tt>distutils</tt>, {{ _('so you can just run') }} <code>python setup.py install</code> {{ _('after downloading') }}.</p>
+    <p>{{ _('If you have') }} <tt>setuptools</tt> {{ _('installed on your system then the applications_dependencies will be downloaded and installed automatically from') }} <a href="https://pypi.python.org/">PyPI</a>. {{ _('Otherwise, you will need to make sure you have these Python libraries installed:') }}</p>
     <ul>
       <li><tt>simplejson</tt></li>
       <li><tt>requests</tt> (0.12.1 or later)</li>
     </ul>
     <p>&nbsp;</p>
 
-    <h3>Usage examples</h3>
+    <h3>{{ _('Usage examples') }}</h3>
 
     <ul class="nav nav-tabs" id="api-example-tabs">
       <li class="active"><a href="#curl" data-toggle="tab">curl</a></li>
@@ -37,7 +37,7 @@
     <div class="tab-content">
 
       <div class="tab-pane active" id="curl">
-        <p>No download required!</p>
+        <p>{{ _('No download required!') }}</p>
 
 {#
 These code snippets are generated using our very own Zulip tool, by
@@ -45,7 +45,7 @@ sending them to myself in a code block, and then using the inspector
 to pull out the resulting HTML :)
 #}
 
-<h4>Stream message</h4>
+<h4>{{ _('Stream message') }}</h4>
 <div class="codehilite"><pre>curl {{ external_api_uri_subdomain }}/v1/messages <span class="se">\</span>
     -u BOT_EMAIL_ADDRESS:BOT_API_KEY <span class="se">\</span>
     -d <span class="s2">"type=stream"</span> <span class="se">\</span>
@@ -54,7 +54,7 @@ to pull out the resulting HTML :)
     -d <span class="s2">"content=Something is rotten in the state of Denmark."</span></pre>
 </div>
 
-<h4>Private message</h4>
+<h4>{{ _('Private message') }}</h4>
 <div class="codehilite"><pre>curl {{ external_api_uri_subdomain }}/v1/messages <span class="se">\</span>
     -u BOT_EMAIL_ADDRESS:BOT_API_KEY <span class="se">\</span>
     -d <span class="s2">"type=private"</span> <span class="se">\</span>
@@ -101,51 +101,48 @@ to pull out the resulting HTML :)
 
 
       <div class="tab-pane" id="commandline">
-        <p>You can use <code>zulip-send</code> (found in <code>bin/</code> in the tarball) to easily send Zulips from the command-line, providing the message to be sent on STDIN.</p>
+        <p>{{ _('You can use <code>zulip-send</code> (found in <code>bin/</code> in the tarball) to easily send Zulips from the command-line, providing the message to be sent on STDIN.')}}</p>
 
-<h4>Stream message</h4>
+<h4>{{ _('Stream message') }}</h4>
 <div class="codehilite"><pre>zulip-send --stream Denmark --subject Castle \
 --user othello-bot@example.com --api-key a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5{% if api_site_required %} \
 --site={{ external_api_uri_subdomain }}{% endif %}</pre></div>
 
-<h4>Private message</h4>
+<h4>{{ _('Private message') }}</h4>
 <div class="codehilite"><pre>zulip-send hamlet@example.com \
 --user othello-bot@example.com --api-key a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5{% if api_site_required %} \
 --site={{ external_api_uri_subdomain }}{% endif %}</pre></div>
 
-<h4>Passing in the message on the command-line</h4>
-<p>If you'd like, you can also provide the message on the command-line with the <code>-m</code> flag, as follows:</p>
+<h4>{{ _('Passing in the message on the command-line') }}</h4>
+<p>{{ _('If you would like, you can also provide the message on the command-line with the <code>-m</code> flag, as follows:') }}</p>
 <div class="codehilite"><pre>zulip-send --stream Denmark --subject Castle \
 -m <span class="s2">"Something is rotten in the state of Denmark."</span> \
 --user othello-bot@example.com --api-key a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5{% if api_site_required %} \
 --site={{ external_api_uri_subdomain }}{% endif %}
 </pre></div>
 
-      <p>You can omit the <code>user</code>{% if api_site_required %}, <code>api-key</code>, and
-      <code>site</code>{% else %} and <code>api-key</code>{% endif %} arguments if you have a
-      <code>~/.zuliprc</code> file.
+      <p>{{ _('You can omit the') }} <code>user</code>{% if api_site_required %}, <code>api-key</code>,
+      <code>site</code>{% else %} and <code>api-key</code>{% endif %} {{ _('arguments if you have a <code>~/.zuliprc</code> file') }}.
       </p>
-      <p>See also the <a href="/api/endpoints">full API endpoint documentation.</a></p>
+      <p>{{ _('See also the') }} <a href="/api/endpoints">{{ _('full API endpoint documentation') }}.</a></p>
     </div>
 
 
     <p>&nbsp;</p>
 
-    <h3>API Keys</h3>
+    <h3>{{ _('API Keys') }}</h3>
     <a name="api_keys"></a>
-    <p>You can create bots on your <a href="/#settings" target="_blank">settings page</a>.
-    Once you have a bot, you can use its email and API key to send messages.</p>
+    <p>{{ _('You can create bots on your') }} <a href="/#settings" target="_blank">{{ _('settings page') }}</a>.
+    {{ _('Once you have a bot, you can use its email and API key to send messages.') }}</p>
 
-    <p>Create a bot:</p>
+    <p>{{ _('Create a bot:') }}</p>
     <img class="screenshot" src="/static/images/api/create-bot.png" />
 
-    <p>Look for the bot's email and API key:
+    <p>{{ _('Look for email and API key of the bot:') }}
     <img class="screenshot" src="/static/images/api/bot-key.png" /></p>
 
-    <p>If you prefer to send messages as your own user, you can also find your API key on your <a href="/#settings" target="_blank">settings page</a>.</p>
-    <p>When using our python bindings, you may either specify the user
-    and API key for each Client object that you initialize, or let the binding look for
-    them in your <code>~/.zuliprc</code>, which you can create as follows:</p>
+    <p>{{ _('If you prefer to send messages as your own user, you can also find your API key on your') }} <a href="/#settings" target="_blank">{{ _('settings page') }}</a>.</p>
+    <p>{{ _('When using our python bindings, you may either specify the user and API key for each Client object that you initialize, or let the binding look for them in your <code>~/.zuliprc</code>, which you can create as follows:') }}</p>
 <div class="codehilite"><pre><span class="k">[api]</span>
 <span class="na">key</span><span class="o">=</span><span class="s">BOT_API_KEY</span>
 <span class="na">email</span><span class="o">=</span><span class="s">BOT_EMAIL_ADDRESS</span>

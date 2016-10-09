@@ -159,13 +159,13 @@ def send_signup_message(sender, signups_stream, user_profile,
     if user_profile.realm.notifications_stream is not None and user_count > 1:
         internal_send_message(sender, "stream",
                               user_profile.realm.notifications_stream.name,
-                              "New users", "%s just signed up for Zulip. Say hello!" % \
+                              "New users", "%s just signed up for Mr.TALK. Say hello!" % \
                                 (user_profile.full_name,),
                               realm=user_profile.realm)
 
     internal_send_message(sender,
             "stream", signups_stream, user_profile.realm.domain,
-            "%s <`%s`> just signed up for Zulip!%s(total: **%i**)" % (
+            "%s <`%s`> just signed up for Mr.TALK!%s(total: **%i**)" % (
                 user_profile.full_name,
                 user_profile.email,
                 internal_blurb,
@@ -222,7 +222,7 @@ def process_new_human_user(user_profile, prereg_user=None, newsletter_data=None)
         # This is a cross-realm private message.
         internal_send_message(settings.NOTIFICATION_BOT,
                 "private", prereg_user.referred_by.email, user_profile.realm.domain,
-                "%s <`%s`> accepted your invitation to join Zulip!" % (
+                "%s <`%s`> accepted your invitation to join Mr.TALK!" % (
                     user_profile.full_name,
                     user_profile.email,
                     )
@@ -839,7 +839,7 @@ def recipient_for_emails(emails, not_forged_mirror_message,
             raise ValidationError(_("Invalid email '%s'") % (email,))
         if (not user_profile.is_active and not user_profile.is_mirror_dummy) or \
                 user_profile.realm.deactivated:
-            raise ValidationError(_("'%s' is no longer using Zulip.") % (email,))
+            raise ValidationError(_("'%s' is no longer using Mr.TALK.") % (email,))
         recipient_profile_ids.add(user_profile.id)
         normalized_emails.add(user_profile.email)
         realm_domains.add(user_profile.realm.domain)
@@ -3081,7 +3081,7 @@ def handle_push_notification(user_profile_id, missed_message):
             elif message.recipient.type == Recipient.STREAM:
                 alert = "New mention from %s" % (sender_str,)
             else:
-                alert = "New Zulip mentions and private messages from %s" % (sender_str,)
+                alert = "New Mr.TALK mentions and private messages from %s" % (sender_str,)
 
             if apple:
                 apple_extra_data = {'message_ids': [message.id]}
@@ -3201,7 +3201,7 @@ def do_invite_users(user_profile, invitee_emails, streams):
                            lambda event: do_send_confirmation_email(user, user_profile))
 
     if skipped:
-        ret_error = _("Some of those addresses are already using Zulip, "
+        ret_error = _("Some of those addresses are already using Mr.TALK, "
                       "so we didn't send them an invitation. We did send "
                       "invitations to everyone else!")
         ret_error_data = {'errors': skipped}
@@ -3221,9 +3221,9 @@ def do_refer_friend(user_profile, email):
                'Realm: %s\n'
                'Referred: %s') % (user_profile.full_name, user_profile.email,
                                   user_profile.realm.domain, email)
-    subject = "Zulip referral: %s" % (email,)
-    from_email = '"%s" <%s>' % (user_profile.full_name, 'referrals@zulip.com')
-    to_email = '"Zulip Referrals" <zulip+referrals@zulip.com>'
+    subject = "Mr.TALK referral: %s" % (email,)
+    from_email = '"%s" <%s>' % (user_profile.full_name, 'referrals@mrtalk.co.kr')
+    to_email = '"Mr.TALK Referrals" <mrtalk+referrals@mratlk.co.kr>'
     headers = {'Reply-To' : '"%s" <%s>' % (user_profile.full_name, user_profile.email,)}
     msg = EmailMessage(subject, content, from_email, [to_email], headers=headers)
     msg.send()

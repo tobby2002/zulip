@@ -10,7 +10,7 @@
 
 # The user-accessible Zulip hostname for this installation, e.g.
 # zulip.example.com
-EXTERNAL_HOST = 'zulip.mrtalk.co.kr'
+EXTERNAL_HOST = 'mrtalk.co.kr'
 
 # The email address for the person or team who maintain the Zulip
 # Voyager installation. Will also get support emails. (e.g. zulip-admin@example.com)
@@ -101,7 +101,7 @@ EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = "Mr.Talk <mr.talk@mrtalk.co.kr>"
 # The noreply address to be used as Reply-To for certain generated emails.
 # Messages sent to this address should not be delivered anywhere.
-NOREPLY_EMAIL_ADDRESS = "mr.talk@mrtalk.co.kr"
+NOREPLY_EMAIL_ADDRESS = "noreplay@mrtalk.co.kr"
 
 # A comma-separated list of strings representing the host/domain names
 # that this Django site can serve. You should reset it to be a list of

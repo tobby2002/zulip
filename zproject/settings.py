@@ -184,21 +184,21 @@ for setting_name, setting_val in six.iteritems(DEFAULT_SETTINGS):
         vars()[setting_name] = setting_val
 
 # Extend ALLOWED_HOSTS with localhost (needed to RPC to Tornado).
-ALLOWED_HOSTS += ['127.0.0.1', 'localhost','zulip.mrtalk.co.kr','mrtalk.co.kr']
+ALLOWED_HOSTS += ['127.0.0.1', 'localhost', 'zulip.mrtalk.co.kr', 'mrtalk.co.kr', '0.0.0.0']
 
 # These are the settings that we will check that the user has filled in for
 # production deployments before starting the app.  It consists of a series
 # of pairs of (setting name, default value that it must be changed from)
-REQUIRED_SETTINGS = [("EXTERNAL_HOST", "zulip.mrtalk.co.kr"),
-                     ("ZULIP_ADMINISTRATOR", "zulip-admin@example.com"),
+REQUIRED_SETTINGS = [("EXTERNAL_HOST", "mrtalk.co.kr"),
+                     ("ZULIP_ADMINISTRATOR", "mr.neo@mrtalk.co.kr"),
                      # SECRET_KEY doesn't really need to be here, in
                      # that we set it automatically, but just in
                      # case, it seems worth having in this list
                      ("SECRET_KEY", ""),
                      ("AUTHENTICATION_BACKENDS", ()),
-                     ("NOREPLY_EMAIL_ADDRESS", "noreply@example.com"),
-                     ("DEFAULT_FROM_EMAIL", "Zulip <zulip@example.com>"),
-                     ("ALLOWED_HOSTS", ["*", '127.0.0.1', 'localhost']),
+                     ("NOREPLY_EMAIL_ADDRESS", "noreply@mrtalk.co.kr"),
+                     ("DEFAULT_FROM_EMAIL", "Mr.Talk <mr.talk@mrtalk.co.kr>"),
+                     ("ALLOWED_HOSTS", ["*", '127.0.0.1', 'localhost', 'mrtalk.co.kr', 'zulip.mrtalk.co.kr', '0.0.0.0']),
                      ]
 
 if ADMINS == "":
@@ -547,7 +547,7 @@ if EMAIL_GATEWAY_PATTERN != "":
 DEPLOYMENT_ROLE_KEY = get_secret("deployment_role_key")
 
 if PRODUCTION:
-    FEEDBACK_TARGET = "https://zulip.mrtalk.co.kr/api"
+    FEEDBACK_TARGET = "https://mrtalk.co.kr/api"
 else:
     FEEDBACK_TARGET = "http://localhost:9991/api"
 

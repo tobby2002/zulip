@@ -200,7 +200,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Download Zulip for Windows"
 msgid "Download the beta of Zulip for desktop"
-msgstr "Windows용 Zulip 다운로드하기"
+msgstr "Windows용 Mr.TALK 다운로드하기"
 
 #: templates/zerver/apps.html:76
 msgid ""
@@ -214,7 +214,7 @@ msgstr ""
 
 #: templates/zerver/apps.html:83 templates/zerver/apps.html.py:85
 msgid "Download Zulip for Mac"
-msgstr "Mac용 Zulip 다운로드하기"
+msgstr "Mac용 Mr.TALK 다운로드하기"
 
 #: templates/zerver/apps.html:93
 msgid ""
@@ -247,7 +247,7 @@ msgid ""
 "built for 64-bit systems."
 msgstr ""
 "64비트용으로 빌드된 <a href=\"https://zulip.com/dist/apps/sso/linux/zulip-"
-"desktop_latest.bin.tar.gz\">Zulip 앱 바이너리가</a> 있습니다."
+"desktop_latest.bin.tar.gz\">Mr.TALK 앱 바이너리가</a> 있습니다."
 
 #: templates/zerver/apps.html:116
 msgid ""
@@ -256,7 +256,7 @@ msgid ""
 "built for 64-bit systems."
 msgstr ""
 "64비트용으로 빌드된 <a href=\"https://zulip.com/dist/apps/linux/zulip-"
-"desktop_latest.bin.tar.gz\">Zulip 앱 바이너리가</a> 있습니다."
+"desktop_latest.bin.tar.gz\">Mr.TALK 앱 바이너리가</a> 있습니다."
 
 #: templates/zerver/apps.html:122
 msgid ""
@@ -274,12 +274,12 @@ msgid ""
 "on the market today (after\n"
 "        Solitaire, obviously.)"
 msgstr ""
-"세계에서 두 번째로 훌륭한 Windows 앱인 <b>Windows용 Zulip</b>을 소개합니다!\n"
+"세계에서 두 번째로 훌륭한 Windows 앱인 <b>Windows용 Mr.TALK</b>을 소개합니다!\n"
 "왜 뜬금없이 콩을 까냐고요? 물론 카드놀이 때문이죠!"
 
 #: templates/zerver/apps.html:131 templates/zerver/apps.html.py:133
 msgid "Download Zulip for Windows"
-msgstr "Windows용 Zulip 다운로드하기"
+msgstr "Windows용 Mr.TALK 다운로드하기"
 
 #: templates/zerver/apps.html:141
 msgid ""
@@ -289,8 +289,8 @@ msgid ""
 "        for Plan 9."
 msgstr ""
 "먼저, 저희가 호스팅하는 9P 파일시스템\n"
-"<code>plan.zulip.com</code>으로 접속하신 다음에, ...\n"
-"물론 농담입니다. 플랜 9용 Zulip은 없습니다."
+"<code>mrtalk.co.kr</code>으로 접속하신 다음에, ...\n"
+"물론 농담입니다. 플랜 9용 Mr.TALK은 없습니다."
 
 #: templates/zerver/bankruptcy.html:6
 msgid "Welcome back"
@@ -298,15 +298,15 @@ msgstr "돌아오신 것을 환영합니다"
 
 #: templates/zerver/bankruptcy.html:13
 msgid "Yes, please!"
-msgstr ""
+msgstr "네, 그렇게합니다"
 
 #: templates/zerver/bankruptcy.html:15
 msgid "No, I'll catch up"
-msgstr ""
+msgstr "아니오, 필요합니다."
 
 #: templates/zerver/closed_realm.html:4
 msgid "Closed realm"
-msgstr ""
+msgstr "폐쇄된 영역"
 
 #: templates/zerver/closed_realm.html:6 templates/zerver/deactivated.html:6
 msgid "Hi there! Thank you for your interest in Zulip"
@@ -319,6 +319,10 @@ msgid ""
 "users with e-mail addresses within the organization. Please ask for a new "
 "invite to an appropriate e-mail address"
 msgstr ""
+"가입할려고 하는 조직은, %(closed_domain_name)s, 의 도메인상의 메일주소를"
+"가진 조직멤버에 한해서만 가능합니다. 적당한 이메일 주소로 다시 초대를 받아서 "
+"진행하여 주시기 바랍니다."
+
 
 #: templates/zerver/compose.html:10 templates/zerver/keyboard_shortcuts.html:65
 msgid "New stream message"
@@ -372,6 +376,10 @@ msgstr "보내는 중..."
 msgid "Press Enter to send"
 msgstr "Enter 키를 눌러 보내기"
 
+#: templates/zerver/compose.html:86
+msgid "Send"
+msgstr "보내기"
+
 #: templates/zerver/create_realm.html:25
 msgid "Create organization"
 msgstr "조직만들기"
@@ -405,11 +413,11 @@ msgstr ""
 
 #: templates/zerver/features.html:4
 msgid "Zulip Features"
-msgstr "Zulip의 기능"
+msgstr "Mr.Talk 기능"
 
 #: templates/zerver/features.html:7
 msgid "Threaded group conversations"
-msgstr ""
+msgstr "멀티처리 그룹 대화"
 
 #: templates/zerver/features.html:8
 msgid ""
@@ -503,17 +511,20 @@ msgstr "대화 도중 특정인을 부르고 싶으신가요? @로 호출하세�
 
 #: templates/zerver/features.html:61
 msgid "Stream-wide announcements"
-msgstr ""
+msgstr "채널 전체공지 알림"
 
 #: templates/zerver/features.html:62
 msgid ""
 "Use <code>@all</code> or <code>@everyone</code> to get the\n"
 "        attention of everyone in a stream."
 msgstr ""
+"다음의 @톡 을 사용하여 '사용예: <code>@all</code> or <code>@everyone</code>' 채널상의 모든이에게\n"
+"        쉽고 간편하게 알림을 할 수 있다."
+
 
 #: templates/zerver/features.html:67
 msgid "Emails for important missed messages"
-msgstr "놓친 주요 메시지 이메일로 받아보기"
+msgstr "놓친 주요 톡메시지 이메일로 받아보기"
 
 #: templates/zerver/features.html:68
 msgid ""
@@ -521,7 +532,7 @@ msgid ""
 "        Zulip, we'll send you an email summary so you're always in the\n"
 "        loop."
 msgstr ""
-"Zulip에 접속해있지 않은 동안 중요한 대화를 놓치더라도,\n"
+"Mr.TALK에 접속해있지 않은 동안 중요한 대화를 놓치더라도,\n"
 "이메일로 요약된 내용을 보내드리니 걱정하지 마세요."
 
 #: templates/zerver/features.html:74
@@ -614,7 +625,7 @@ msgstr "구독된 채널리스트"
 
 #: templates/zerver/features.html:119 templates/zerver/left-sidebar.html:13
 msgid "Subscribe, add, or configure streams"
-msgstr "채널 구독·추가·설정"
+msgstr "채널리스트 및 구독·추가·설정"
 
 #: templates/zerver/features.html:119 templates/zerver/left-sidebar.html:14
 msgid "Filter streams list"
@@ -1178,7 +1189,7 @@ msgstr "or 유저선택"
 
 #: templates/zerver/login.html:134
 msgid "Administrators"
-msgstr "Admin유저"
+msgstr "ADMIN유저"
 
 #: templates/zerver/login.html:138
 msgid "Normal users"
@@ -1186,17 +1197,17 @@ msgstr "일반유저"
 
 #: templates/zerver/login.html:149
 msgid "Sign in with Google"
-msgstr "구글 로그인"
+msgstr "구글계정으로 로그인"
 
 #: templates/zerver/login.html:156
 #, fuzzy
 #| msgid "Sign up with Google"
 msgid "Sign in with GitHub"
-msgstr "Github 로그인"
+msgstr "Github계정으로 로그인"
 
 #: templates/zerver/markdown_help.html:5 templates/zerver/navbar.html:64
 msgid "Message formatting"
-msgstr "메시지 사용법"
+msgstr "톡메시지 사용법"
 
 #: templates/zerver/markdown_help.html:11
 msgid "You type"
@@ -1320,7 +1331,7 @@ msgid ""
 "the instructions on <a href=\"https://www.zulip.org/\">www.zulip.org</a>"
 msgstr ""
 "Mr.Talk은 인공지능 챗봇문화를 바르게 선도하려고 합니다. "
-"자세한 정보는 여기로 <a href=\"https://zulip.mrtalk.co.kr/\">zulip.mratalk.co.kr</a>"
+"자세한 정보는 여기로 <a href=\"https://mrtalk.co.kr/\">mrtalk.co.kr</a>"
 
 #: templates/zerver/register.html:19
 msgid "You're almost there."
@@ -2419,3 +2430,147 @@ msgstr "잘못된 파라미터 타입"
 #: zilencer/views.py:119
 msgid "Cannot determine endpoint for user."
 msgstr "유저의 endpoint 를 정할 수 없습니다"
+
+#: templates/zerver/api.html:6
+msgid "We hear you like APIs..."
+msgstr "Mr.TALK API 사용설명서"
+
+#: templates/zerver/api.html:8
+msgid "We have a"
+msgstr "Mr.TALK에서는"
+
+#: templates/zerver/api.html:8
+msgid "well-documented API"
+msgstr "API 문서"
+
+#: templates/zerver/api.html:8
+msgid "that allows you to build custom integrations, in addition to our"
+msgstr "를 제공하고 있습니다. 이 API문서를 통해서 외부시스템과 통합하여 사용할 수 있습니다. 뿐만 아니라 Mr.TALK이 제공하는"
+
+#: templates/zerver/api.html:8
+msgid "existing integrations"
+msgstr "이미 통합된 외부통합봇들"
+
+#: templates/zerver/api.html:8
+msgid "For ease-of-use, we have created a Python module that you can drop in to a project to start interacting with our API"
+msgstr "여러가지를 위해서, Mr.TALK API와 상호작용할 수 있도록 하였으며, 여러분의 프로젝트에 포함할 수 있게 하기위해서 Python모듈 또한 준비하였습니다"
+
+#: templates/zerver/api.html:10
+msgid "Do not want to make it yourself?"
+msgstr "스스로 만들 필요가 없습니다."
+
+#: templates/zerver/api.html:10
+msgid "already integrates with lots of services"
+msgstr "은 이미 많은 서비스와 통합되어 있습니다."
+
+#: templates/zerver/api.html:14
+msgid "Download Python bindings and examples"
+msgstr "다운로드 - 파이썬 바이딩 및 예제샘플."
+
+#: templates/zerver/api.html:20
+msgid "Installation instruction"
+msgstr "설치방법"
+
+#: templates/zerver/api.html:20
+msgid "This package uses"
+msgstr "이패키지는 다음모듈을 사용합니다 : "
+
+#: templates/zerver/api.html:20
+msgid "so you can just run"
+msgstr "그리고 단지 다운로드 한후 이명령어만 "
+
+#: templates/zerver/api.html:20
+msgid "after downloading"
+msgstr "실행하면 됩니다."
+
+#: templates/zerver/api.html:22
+msgid "If you have"
+msgstr "만일 "
+
+#: templates/zerver/api.html:22
+msgid "installed on your system then the applications_dependencies will be downloaded and installed automatically from"
+msgstr "이 이미 설치되어 있으면 어플리케이션 의존관계모듈들이 자동으로 다운로드 그리고 인스톨될 것입니다. 참고 - "
+
+#: templates/zerver/api.html:22
+msgid "Otherwise, you will need to make sure you have these Python libraries installed:"
+msgstr "그렇지않으면, 다음의 두개의 파이썬 라이브러리가 설치 된 것을 확인할 필요가 있습니다."
+
+#: templates/zerver/api.html:29
+msgid "Usage examples"
+msgstr "사용법 예제"
+
+#: templates/zerver/api.html:40
+msgid "No download required!"
+msgstr "다운로드가 필요없습니다."
+
+#: templates/zerver/api.html:48
+msgid "Stream message"
+msgstr "채널톡 사용예"
+
+#: templates/zerver/api.html:57
+msgid "Private message"
+msgstr "미스터톡 사용예"
+
+#: templates/zerver/api.html:134
+msgid "API Keys"
+msgstr "API키 생성 및 사용법"
+
+#: templates/zerver/api.html:136
+msgid "You can create bots on your"
+msgstr "다음의 설정페이지에서 봇들을 생성할 수 있습니다 : "
+
+#: templates/zerver/api.html:136
+msgid "settings page"
+msgstr "설정페이지"
+
+#: templates/zerver/api.html:137
+msgid "Once you have a bot, you can use its email and API key to send messages."
+msgstr "한번 봇을 만들었으면, 그봇의 메일 그리고 API키를 이용하여 톡메시지를 보낼 수 있습니다. "
+
+#: templates/zerver/api.html:139
+msgid "Create a bot:"
+msgstr "봇 생성하기 : "
+
+#: templates/zerver/api.html:142
+msgid "Look for email and API key of the bot:"
+msgstr "생성한 봇의 메일주소와 API키를 참고하세요"
+
+#: templates/zerver/api.html:145
+msgid "If you prefer to send messages as your own user, you can also find your API key on your"
+msgstr "나자신의 유저계정을 통해서 톡메시지를 보내고자 한다면, 다음 설정페이지에서 API키를 찾을 수 있습니다 - "
+
+#: templates/zerver/api.html:146
+msgid "When using our python bindings, you may either specify the user and API key for each Client object that you initialize, or let the binding look for them in your <code>~/.zuliprc</code>, which you can create as follows:"
+msgstr "여기서 제공한 파이썬 바이딩을 사용할때, 당신이 초기화한 각 클라이언트 오브젝트용 유저 및 API키를 지정하여야 합니다. 또는 그 바이딩이 당신의 <code>~/.zuliprc</code> 코드내에서 그것들을 찾게 하여야 합니다. 이 코드는 다음처럼 생성할 수 있습니다."
+
+#: templates/zerver/api.html:104
+msgid "You can use <code>zulip-send</code> (found in <code>bin/</code> in the tarball) to easily send Zulips from the command-line, providing the message to be sent on STDIN."
+msgstr "다음 <code>zulip-send</code> 명령어를 사용할 수 있습니다.(다운로드한 tar파일내의 <code>bin/</code> 에 있음) 따라서 터미널커맨드명령라인(command-line)에서 Mr.TALK톡들을 쉽게 보낼 수 있습니다. 그 톡메시지들은 STDIN 상에서 제공되기도 합니다."
+
+#: templates/zerver/api.html:116
+msgid "Passing in the message on the command-line"
+msgstr "커멘드명령라인상에서 톡메시지 패싱하기"
+
+#: templates/zerver/api.html:117
+msgid "If you would like, you can also provide the message on the command-line with the <code>-m</code> flag, as follows:"
+msgstr "문제가 없다면, 다음에와 같이 <code>-m</code> 플래그를 이용하여 커멘드명령라인 상에서 톡메시지를 보낼 수 있습니다. "
+
+#: templates/zerver/api.html:124
+msgid "You can omit the"
+msgstr "다음의 3개의"
+
+#: templates/zerver/api.html:125
+msgid "arguments if you have a <code>~/.zuliprc</code> file"
+msgstr "인자를 생략할 수 있습니다. 단 <code>~/.zuliprc</code> 파일을 가지고 있는 전제하에서 입니다."
+
+#: templates/zerver/api.html:127
+msgid "See also the"
+msgstr "다음 문서를 참고하세요 - "
+
+#: templates/zerver/api.html:127
+msgid "full API endpoint documentation"
+msgstr "API Endpoint 문서"
+
+#: templates/zerver/api.html:134
+msgid "oooooooo"
+msgstr ""

@@ -1,4 +1,4 @@
-:q!#!/usr/bin/env python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 # Copyright © 2012 Zulip, Inc.
@@ -29,12 +29,9 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 import zulip
 
 usage = """send-message --user=<bot's email address> --api-key=<bot's api key> [options] <recipients>
-
 Sends a test message to the specified recipients.
-
 Example: send-message --user=your-bot@example.com --api-key=a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5 --type=stream commits --subject="my subject" --message="test message"
 Example: send-message --user=your-bot@example.com --api-key=a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5 user1@example.com user2@example.com
-
 You can omit --user and --api-key arguments if you have a properly set up ~/.zuliprc
 """
 parser = optparse.OptionParser(usage=usage)
