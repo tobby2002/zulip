@@ -87,7 +87,7 @@ msgstr "서비스방침"
 
 #: templates/zerver/accounts_home.html:18 templates/zerver/create_realm.html:18
 msgid "Let's get started"
-msgstr "시작하기"
+msgstr "미스터톡과 함께"
 
 #: templates/zerver/accounts_home.html:23 templates/zerver/create_realm.html:23
 msgid "Enter your work email address"
