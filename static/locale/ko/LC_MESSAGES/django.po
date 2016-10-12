@@ -746,7 +746,7 @@ msgstr ""
 
 #: templates/zerver/hello.html:64
 msgid "Never miss the conversations you care about."
-msgstr "주목하는 대화의 명료한 표시기능"
+msgstr "명확한 알림표시기능"
 
 #: templates/zerver/hello.html:67
 msgid ""
@@ -783,7 +783,7 @@ msgstr ""
 
 #: templates/zerver/hello.html:104
 msgid "Integrations that don't intrude."
-msgstr "Mr.TALK과의 외부통합방법"
+msgstr "외부챗봇과의 통합방법 및 API"
 
 #: templates/zerver/hello.html:107
 msgid ""
@@ -803,7 +803,7 @@ msgstr ""
 
 #: templates/zerver/hello.html:125
 msgid "As technical as you want to be."
-msgstr "훌륭한 톡메시지 사용팁 "
+msgstr "테크닉한 톡메시지 사용팁 "
 
 #: templates/zerver/hello.html:128
 msgid "Keyboard shortcuts? Check."
@@ -899,11 +899,11 @@ msgstr "아직 이 유저와 미스터톡 메시지가 없습니다!"
 
 #: templates/zerver/home.html:34
 msgid "You have no private messages with these people yet!"
-msgstr "아직 다른 유저들과 미스터톡메시지가 없습니다!"
+msgstr "아직 다른 유저들과 미스터톡 메시지가 없습니다!"
 
 #: templates/zerver/home.html:40
 msgid "You haven't received any messages sent by this user yet!"
-msgstr "아직 이 유저로부터 받은 톡메시지가 없습니다!"
+msgstr "아직 이 유저로부터 받은 미스터톡 메시지가 없습니다!"
 
 #: templates/zerver/home.html:43
 msgid "This user does not exist!"
