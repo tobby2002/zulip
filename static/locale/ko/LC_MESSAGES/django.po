@@ -139,11 +139,11 @@ msgstr "혹시 스팸으로 분류되지는 않았는지 확인해 보세요."
 
 #: templates/zerver/apps.html:5
 msgid "Do we have apps? Appsolutely."
-msgstr "앱을 가지고 있습니가? 절대적으로"
+msgstr "설치방법"
 
 #: templates/zerver/apps.html:6
 msgid "Ok, I take it back, I'm sorry, please don't go."
-msgstr "오케이, 나중에 취하겠습니다, 미안합니다, 가지마세요"
+msgstr "다양한 플랫폼에서 사용할 수 있습니다!"
 
 #: templates/zerver/apps.html:8
 msgid "Installation instructions"
@@ -265,7 +265,7 @@ msgid ""
 "        was missing... until now."
 msgstr ""
 "Windows는 다재다능한 OS입니다.\n"
-"게임, 코딩, 사무, 뭐든 다 할 수 있죠.\n"
+"게임, 코딩, 사무 등 뭐든 다 할 수 있죠.\n"
 "하지만 뭔가 빠진 느낌이 들지 않나요? 더는 아닙니다."
 
 #: templates/zerver/apps.html:126
@@ -275,7 +275,7 @@ msgid ""
 "        Solitaire, obviously.)"
 msgstr ""
 "세계에서 두 번째로 훌륭한 Windows 앱인 <b>Windows용 Mr.TALK</b>을 소개합니다!\n"
-"왜 뜬금없이 콩을 까냐고요? 물론 카드놀이 때문이죠!"
+" "
 
 #: templates/zerver/apps.html:131 templates/zerver/apps.html.py:133
 msgid "Download Zulip for Windows"
