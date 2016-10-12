@@ -882,12 +882,12 @@ msgstr "아직 여기에 보내진 채널톡이 없습니다"
 #: templates/zerver/home.html:18 templates/zerver/home.html.py:24
 #: templates/zerver/home.html:30 templates/zerver/home.html.py:36
 msgid "Why not"
-msgstr "여기에"
+msgstr "지금 바로"
 
 #: templates/zerver/home.html:19 templates/zerver/home.html.py:25
 #: templates/zerver/home.html:31 templates/zerver/home.html.py:37
 msgid "start the conversation"
-msgstr "채널톡을 만들어 시작해 보세요!"
+msgstr "톡메시지 보내기"
 
 #: templates/zerver/home.html:22
 msgid "You have no private messages yet!"
@@ -961,19 +961,19 @@ msgstr "다음"
 
 #: templates/zerver/invite_user.html:5
 msgid "Invite users to"
-msgstr "유저초대 - "
+msgstr "유저초대하기 - "
 
 #: templates/zerver/invite_user.html:12
 msgid "Emails (one on each line or comma-separated)"
-msgstr "EMAIL(한명, 코마로 여러명) : "
+msgstr "Email : "
 
 #: templates/zerver/invite_user.html:16
 msgid "One or more email addresses..."
-msgstr "메일주소기입, 콤마(,)구분자사용해서 여러명"
+msgstr "메일주소기입, 콤마(,)구분자로 복수기입"
 
 #: templates/zerver/invite_user.html:24
 msgid "Streams they should join"
-msgstr "초대 할 채널선택 :"
+msgstr "초대채널 :"
 
 #: templates/zerver/invite_user.html:29
 #: templates/zerver/stream_creation_prompt.html:37
