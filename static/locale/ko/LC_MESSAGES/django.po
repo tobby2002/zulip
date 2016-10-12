@@ -467,6 +467,8 @@ msgid ""
 "        people, and threads of conversation, with advanced search\n"
 "        operators for fine-grained control."
 msgstr ""
+"검색기능이 강력하고 스마트합니다, 이를 이용해서 텍스트, 유저들, 수많은 톡메시지를\n"
+"        쉽게 찾을 수 있습니다. 물론 세밀한 조작도 할 수 있습니다."
 
 #: templates/zerver/features.html:37
 msgid "Team presence and buddy list"
@@ -559,7 +561,7 @@ msgstr "단축키"
 
 #: templates/zerver/features.html:86
 msgid "Communicate as efficiently as you use your favorite text editor."
-msgstr "가장 좋아하는 편집기를 다루듯 효율적으로 대화를 나누세요."
+msgstr "가장 좋아하는 편집기를 이용하는 것처럼 효율적으로 대화를 나누세요."
 
 #: templates/zerver/features.html:90
 msgid "Emoji"
@@ -652,18 +654,14 @@ msgid ""
 "a> for\n"
 "        Trac, Nagios, Github, Jenkins, and more."
 msgstr ""
+"당신이 사용하는 서비스와 <a href=\"%(server_uri)s/integrations\">통합</a>\n"
+"        할 수 있습니다. 지금 Mr.TALK 에 Trac, Nagios, Github, Jenkins 등을 사용해보세요"
 
 #: templates/zerver/features.html:132
 msgid "API"
 msgstr "API"
 
 #: templates/zerver/features.html:133
-#, fuzzy, python-format
-#| msgid ""
-#| "Want to roll your own notifications? We've got a\n"
-#| "        dead-simple RESTful <a href=\"/api\">API and Python bindings</a>\n"
-#| "        that will make integrations&mdash;both sending and\n"
-#| "        receiving&mdash;a snap!"
 msgid ""
 "Want to roll your own notifications? We've got a\n"
 "        dead-simple RESTful <a href=\"%(server_uri)s/api\">API and Python "
@@ -671,45 +669,37 @@ msgid ""
 "        that will make integrations&mdash;both sending and\n"
 "        receiving&mdash;a snap!"
 msgstr ""
-"직접 알림을 보내고 싶으세요?\n"
-"진짜 간단한 RESTful <a href=\"/api\">API와 파이썬 바인딩</a>이\n"
-"이미 준비되어 있습니다. 메시지를 보내고 받는 건 일도 아니죠!"
+"직접 자신만의 알림을 보내고 싶으세요?\n"
+"정말 간단한 RESTFUL <a href=\"/api\">API와 파이썬 바인딩</a>이\n"
+"이미 준비되어 있습니다. 톡메시지를 보내고 받는 건 일도 아니죠^^!"
 
 #: templates/zerver/features.html:140
 msgid "Mobile apps"
 msgstr "모바일 앱"
 
 #: templates/zerver/features.html:141
-#, fuzzy, python-format
-#| msgid ""
-#| "Check Zulip on the go with native <a href=\"/apps\">iOS and\n"
-#| "        Android apps</a>"
 msgid ""
 "Check Zulip on the go with native <a href=\"%(server_uri)s/apps\">iOS and\n"
 "        Android apps</a>"
 msgstr ""
-"네이티브 <a href=\"/apps\">iOS와 안드로이드</a> 앱을 통해\n"
-"어디서나 Zulip을 확인하세요."
+"네이티브 <a href=\"/apps\">iOS 와 안드로이드</a> 앱을 통해\n"
+"어디서나 Mr.TALK을 만나보세요."
 
 #: templates/zerver/features.html:146
 msgid "Desktop apps"
 msgstr "데스크탑 앱"
 
 #: templates/zerver/features.html:147
-#, fuzzy, python-format
-#| msgid ""
-#| "Prefer Zulip in its own window and rich, OS-level notifications?\n"
-#| "          Enjoy <a href=\"/apps\">Zulip on your desktop</a>"
 msgid ""
 "Prefer Zulip in its own window and rich, OS-level notifications?\n"
 "          Enjoy <a href=\"%(server_uri)s/apps\">Zulip on your desktop</a>"
 msgstr ""
-"브라우저 대신 따로 돌아가는 창과 OS에 통합된 알림이 더 좋으시다면,\n"
-"얼마든지 <a href=\"/apps\">데스크탑용 Zulip</a>을 쓰실 수 있습니다."
+"브라우저 대신 따로 돌아가는 자신만의 윈도우앱와 OS에 통합된 알림이 더 좋으시다면,\n"
+"언제든지 <a href=\"/apps\">MAC데스크탑용 Mr.TALK</a>을 사용할 수 있습니다."
 
 #: templates/zerver/hello.html:10 templates/zerver/login.html:16
 msgid "Zulip has been released as open source software!"
-msgstr "Zulip이 오픈 소스 소프트웨어로 공개되었습니다!"
+msgstr "Mr.TALK은 당신은 생각하는 인공지능 챗봇서비스 입니다!"
 
 #: templates/zerver/hello.html:13
 msgid ""
@@ -720,16 +710,16 @@ msgid ""
 msgstr ""
 "이 내용에 대한 <a href=\"https://blogs.dropbox.com/tech/2015/09/open-"
 "sourcing-zulip-a-dropbox-hack-week-project\" target=\"_blank\">공지사항</a>"
-"을 읽으시거나, <a href=\"https://www.zulip.org\" target=\"_blank\">Zulip 오"
-"픈 소스 프로젝트 웹사이트</a>를 둘러보세요."
+"을 읽으시거나, <a href=\"https://mrtalk.co.kr\" target=\"_blank\">Mr.TALK "
+"웹사이트</a>를 둘러보세요."
 
 #: templates/zerver/hello.html:26
 msgid "Finally, workplace chat that actually improves your productivity.*"
-msgstr "인공지능기반, 채팅솔루션 Mr.TALK"
+msgstr "인공지능기반, 챗봇채널서비스"
 
 #: templates/zerver/hello.html:28
 msgid "* It's also great for sharing cat pictures"
-msgstr "인공지능챗봇을 이용하여 효율적으로 고객관리를 하세요"
+msgstr "당신을 생각하는 IAM <b>미스터톡</b> AI2"
 
 #: templates/zerver/hello.html:31
 msgid "Log in now!"
@@ -741,7 +731,7 @@ msgstr "가입하세요!"
 
 #: templates/zerver/hello.html:44
 msgid "Make sense of your messages."
-msgstr ""
+msgstr "센스있는 톡을 만들어 보세요!"
 
 #: templates/zerver/hello.html:47
 msgid ""
@@ -750,16 +740,21 @@ msgid ""
 "      a software bug and the content of your website at the same time?\n"
 "      No problem."
 msgstr ""
+"Mr.TALK의 모든 대화는 <em>토픽</em>을 가지고 있습니다, 그래서 \n"
+"      직접 대화하기 쉽습니다. 다른 유저도 뭔가를 바로 인지하고 \n"
+"      동시에 페이지의 내용도 쉽게 파악할 수 있는 좋은 구조입니다."
 
 #: templates/zerver/hello.html:64
 msgid "Never miss the conversations you care about."
-msgstr ""
+msgstr "주목하는 대화의 명료한 표시기능"
 
 #: templates/zerver/hello.html:67
 msgid ""
 "Sometimes, important things get discussed when you&rsquo;re not\n"
 "      around. Unfortunately, so do a lot of unimportant things."
 msgstr ""
+"가끔은, 당신이 부재시에 중요한 일들이 일어날지도 모릅니다만,\n"
+"      안타깝지만 그런 일이 발생할 수 있습니다."
 
 #: templates/zerver/hello.html:70
 msgid ""
@@ -768,10 +763,13 @@ msgid ""
 "        without having to catch up on how Jim&rsquo;s guitar\n"
 "        lessons are going."
 msgstr ""
+"Mr.TALK은 당신은 놓친 대화를 쉽게 리뷰하도록 해줍니다,\n"
+"        따라서 중요한 약속, 미팅, 프로젝트 등 특별히 많은 주의를\n"
+"        기울이지 않아도 쉽게 파악하도록 도와줍니다."
 
 #: templates/zerver/hello.html:86
 msgid "Fast and powerful search"
-msgstr ""
+msgstr "빠르고 정확한 검색"
 
 #: templates/zerver/hello.html:89
 msgid ""
@@ -779,10 +777,13 @@ msgid ""
 "      Gmail-style search will delight you with how quickly you can find\n"
 "      exactly what you&rsquo;re looking for."
 msgstr ""
+"방대한 지식이 챗시스템에서 살아서 움직이고 있습니다.\n"
+"      Mr.TALK의 Gmail스타일의 검색방식은 당신이 찾고자 하는 것을\n"
+"      정확하고 신속하게 만족할만한 결과내용을 찾아 드립니다."
 
 #: templates/zerver/hello.html:104
 msgid "Integrations that don't intrude."
-msgstr ""
+msgstr "Mr.TALK과의 외부통합방법"
 
 #: templates/zerver/hello.html:107
 msgid ""
@@ -793,26 +794,32 @@ msgid ""
 "      you. As with any topic in Zulip, they&rsquo;re easy to focus on,\n"
 "      skim, defer to later, or ignore&mdash;as appropriate."
 msgstr ""
+"Mr.TALK은 적용할 수 있는 <a href=\"/integrations\">외부시스텝 통합방법\n"
+"      </a>과 강력한 <a href=\"/api\">API</a>를 제공합니다.\n"
+"      그러나, 보다 좋은 기능은 : Mr.TALK의 분류화된 톡메시지, 자동화된 톡메시지가\n"
+"      당신을 보다 편리하게 만듦니다. Mr.TALK내의 특정 토픽과 함께\n"
+"      쉽게 주제에 집중할 수 있으며, 적절한 방법으로 플랜에 맞게,\n"
+"      진행할 수 있습니다."
 
 #: templates/zerver/hello.html:125
 msgid "As technical as you want to be."
-msgstr ""
+msgstr "훌륭한 톡메시지 사용팁 "
 
 #: templates/zerver/hello.html:128
 msgid "Keyboard shortcuts? Check."
-msgstr ""
+msgstr "키보드 단축도 제공합니다."
 
 #: templates/zerver/hello.html:129
 msgid "Syntax highlighting? Check."
-msgstr ""
+msgstr "문법체크 하이라이팅도 제공합니다."
 
 #: templates/zerver/hello.html:130
 msgid "Discuss code and technical topics with ease."
-msgstr ""
+msgstr "간편하고 쉽게 코드 또는 기술적 토픽도 토의할 수 있습니다."
 
 #: templates/zerver/hello.html:143
 msgid "Everything else you need to be productive."
-msgstr ""
+msgstr "그리고 생산성 향상 기능"
 
 #: templates/zerver/hello.html:146
 msgid ""
@@ -822,18 +829,22 @@ msgid ""
 "        you might want</a>. Including emoji, naturally. And it's all\n"
 "        open source under the Apache license!"
 msgstr ""
+"드래그앤드랍, 파일업로드, 이미지첨부, 그룹비밀톡, 전체알림톡, 빠진톡메시지, 이메일\n"
+"        개인용 미스터톡메시지, 전체알림톡\n"
+"        데스크탑앱 과 그리고 <a href=\"/features\">주요특징\n"
+"        </a>을 제공합니다. 물론 이모티콘 등도 역시 제공합니다."
 
 #: templates/zerver/hello.html:163
 msgid "On the platform of your choice."
-msgstr "선택한 플랫폼에서"
+msgstr "다양한 플랫폼 제공"
 
 #: templates/zerver/hello.html:199
 msgid "Log in now"
-msgstr "지금 로그인하기"
+msgstr "바로 로그인하기"
 
 #: templates/zerver/hello.html:201
 msgid "Register now"
-msgstr "지금 등록하기"
+msgstr "바로 사용하기"
 
 #: templates/zerver/home.html:6
 msgid "Welcome to"
@@ -845,26 +856,28 @@ msgid ""
 "        here for you right now. I'm sure someone will eventually send\n"
 "        you one."
 msgstr ""
+"자 보세요, 지금 바로 당신을 위한 톡메시지가 없나요?\n"
+"        누군가가 결국 당신에게 톡메시지를 보낼 것입니다."
 
 #: templates/zerver/home.html:11
-msgid "Or"
+msgid "또는"
 msgstr ""
 
 #: templates/zerver/home.html:11
 msgid "take matters into your own hands"
-msgstr ""
+msgstr "스스토 문제를 해결해 보세요."
 
 #: templates/zerver/home.html:12
 msgid "and"
-msgstr ""
+msgstr "그리고"
 
 #: templates/zerver/home.html:13
 msgid "compose a new stream message"
-msgstr "채널톡을 작성하"
+msgstr "채널톡을 작성합니다."
 
 #: templates/zerver/home.html:16
 msgid "Nothing's been sent here yet!"
-msgstr "작성된 채널톡이 없습니다"
+msgstr "아직 여기에 보내진 채널톡이 없습니다"
 
 #: templates/zerver/home.html:18 templates/zerver/home.html.py:24
 #: templates/zerver/home.html:30 templates/zerver/home.html.py:36
@@ -874,72 +887,73 @@ msgstr "여기에"
 #: templates/zerver/home.html:19 templates/zerver/home.html.py:25
 #: templates/zerver/home.html:31 templates/zerver/home.html.py:37
 msgid "start the conversation"
-msgstr "채널톡을 만들어 보세요"
+msgstr "채널톡을 만들어 시작해 보세요!"
 
 #: templates/zerver/home.html:22
 msgid "You have no private messages yet!"
-msgstr "아직 미스터톡이 없습니다"
+msgstr "아직 당신만의 미스터톡이 없습니다!"
 
 #: templates/zerver/home.html:28
 msgid "You have no private messages with this person yet!"
-msgstr "아직 유저에게 톡이 없습니다"
+msgstr "아직 이 유저와 미스터톡 메시지가 없습니다!"
 
 #: templates/zerver/home.html:34
 msgid "You have no private messages with these people yet!"
-msgstr ""
+msgstr "아직 다른 유저들과 미스터톡메시지가 없습니다!"
 
 #: templates/zerver/home.html:40
 msgid "You haven't received any messages sent by this user yet!"
-msgstr ""
+msgstr "아직 이 유저로부터 받은 톡메시지가 없습니다!"
 
 #: templates/zerver/home.html:43
 msgid "This user does not exist!"
-msgstr "존재하지 않는 유저입니다"
+msgstr "이 유저는 존재하지 않는 유저입니다"
 
 #: templates/zerver/home.html:46
 msgid ""
 "You aren't subscribed to this stream and nobody has talked about that yet!"
 msgstr ""
+"아직 이채널을 아무도 구독하지 않았으며 아무도 톡메시지가 보낸적이 없습니다!"
 
 #: templates/zerver/home.html:54
 msgid "You haven't starred anything yet!"
-msgstr "별톡이 없습니다! 톡을 만들어 보세요"
+msgstr "아직 별톡메시지가 없습니다. 톡을 만들어 보세요!"
 
 #: templates/zerver/home.html:57
 msgid "You haven't been mentioned yet"
-msgstr "@톡이 없습니다! 톡을 만들어 보세요"
+msgstr "아직 @톡메시지가 없습니다. 톡을 만들어 보세요!"
 
 #: templates/zerver/home.html:60
 msgid "Nobody has talked about that yet!"
-msgstr "미스톡이 없습니다! 톡을 만들어 보세요"
+msgstr "아직 아무도 미스터톡메시지를 보내지 않았습니다! 톡을 만들어 보세요!"
 
 #: templates/zerver/index.html:51
 msgid "Loading"
-msgstr "로딩"
+msgstr "로딩중"
 
 #: templates/zerver/index.html:52
 msgid "If this message does not go away, please wait a couple seconds and"
-msgstr ""
+msgstr "만일 이 톡메시지를 사라지지 않았으면, 잠시 조금만 기다려주세요 그리고"
 
 #: templates/zerver/index.html:52
 msgid "reload"
-msgstr "다시로드"
+msgstr "페이지를"
 
 #: templates/zerver/index.html:52
 msgid "the page"
-msgstr ""
+msgstr "다시 로딩해 보세요"
 
 #: templates/zerver/initial_invite_page.html:19
 msgid "You're the first one here!"
-msgstr ""
+msgstr "당신이 여기서 첫번째 유저입니다!"
 
 #: templates/zerver/initial_invite_page.html:21
 msgid "Let's invite some folks for you to chat with"
-msgstr ""
+msgstr "톡메시지를 나눌 사람들을 여기로 초대해 보세요! "
 
 #: templates/zerver/initial_invite_page.html:30
 msgid "We'll email invitations to them"
-msgstr ""
+msgstr "그러면 Mr.TALK이 초대메일을 보내줍니다! "
 
 #: templates/zerver/initial_invite_page.html:33
 msgid "Next"
@@ -951,15 +965,15 @@ msgstr "유저초대 - "
 
 #: templates/zerver/invite_user.html:12
 msgid "Emails (one on each line or comma-separated)"
-msgstr "이메일 : "
+msgstr "EMAIL(한명, 코마로 여러명) : "
 
 #: templates/zerver/invite_user.html:16
 msgid "One or more email addresses..."
-msgstr "메일주소기입,복수개,콤마구분"
+msgstr "메일주소기입, 콤마(,)구분자사용해서 여러명"
 
 #: templates/zerver/invite_user.html:24
 msgid "Streams they should join"
-msgstr "초대할 채널선택 :"
+msgstr "초대 할 채널선택 :"
 
 #: templates/zerver/invite_user.html:29
 #: templates/zerver/stream_creation_prompt.html:37
@@ -994,27 +1008,27 @@ msgstr "채널 찾기"
 
 #: templates/zerver/keyboard_shortcuts.html:29
 msgid "Previous message"
-msgstr "이전 메시지"
+msgstr "이전 톡메시지"
 
 #: templates/zerver/keyboard_shortcuts.html:33
 msgid "Next message"
-msgstr "다음 톡"
+msgstr "다음 톡메시지"
 
 #: templates/zerver/keyboard_shortcuts.html:37
 msgid "Scroll up"
-msgstr "스크롤업"
+msgstr "스크롤 업"
 
 #: templates/zerver/keyboard_shortcuts.html:41
 msgid "Scroll down"
-msgstr "스크롤다운"
+msgstr "스크롤 다운"
 
 #: templates/zerver/keyboard_shortcuts.html:45
 msgid "Last message"
-msgstr "마지막톡"
+msgstr "마지막 톡메시지"
 
 #: templates/zerver/keyboard_shortcuts.html:52
 msgid "Composing messages"
-msgstr "톡만들기"
+msgstr "톡메시지 작성하기"
 
 #: templates/zerver/keyboard_shortcuts.html:57
 msgid "Reply to message"
@@ -1022,7 +1036,7 @@ msgstr "리톡하기"
 
 #: templates/zerver/keyboard_shortcuts.html:61
 msgid "Reply to author"
-msgstr "리톡하기"
+msgstr "작성자에 리톡하기"
 
 #: templates/zerver/keyboard_shortcuts.html:73
 msgid "Send message"
@@ -1096,11 +1110,11 @@ msgstr "채널"
 
 #: templates/zerver/left-sidebar.html:20
 msgid "All streams"
-msgstr "모든채널"
+msgstr "전채채널"
 
 #: templates/zerver/left-sidebar.html:32
 msgid "SHARE THE LOVE"
-msgstr "사랑공유"
+msgstr "서로 공유하는 사랑"
 
 #: templates/zerver/left-sidebar.html:36
 msgid "Thanks!"
@@ -1125,6 +1139,12 @@ msgid ""
 "                                that expresses how we feel when you're\n"
 "                                logged out</a>."
 msgstr ""
+"Mr.TALK은 당신은 위해서 여러명을 지금바로 초대할 예정입니다.\n"
+"                              여기를 <a target=\"_blank\"\n"
+"                                                     href=\"http://www."
+"youtube.com/watch?v=PW71En5Pa5s#t=2m01s\">노래\n"
+"                                당신이 로그아웃 했을때 어떻게 느끼는지를 표현한 노래 입니다.\n"
+"                                </a>."
 
 #: templates/zerver/left-sidebar.html:61
 msgid "invite"
@@ -1132,23 +1152,23 @@ msgstr "초대하기"
 
 #: templates/zerver/left-sidebar.html:61
 msgid "remaining"
-msgstr ""
+msgstr "보존하기"
 
 #: templates/zerver/login.html:19
 msgid "Read the"
-msgstr ""
+msgstr "이걸 읽어보세요 - "
 
 #: templates/zerver/login.html:19
 msgid "announcement"
-msgstr "공지"
+msgstr "공지사항"
 
 #: templates/zerver/login.html:19
 msgid "or go to"
-msgstr ""
+msgstr "또는 여기에 가보세요 - "
 
 #: templates/zerver/login.html:19
 msgid "the Zulip open source project website"
-msgstr "미스터톡 인공지능 톡메신져"
+msgstr "미스터톡 인공지능 톡메신져 서비스"
 
 #: templates/zerver/login.html:45
 msgid "Mr.Talk Login"
@@ -1185,7 +1205,7 @@ msgstr "패스워드 찾기"
 
 #: templates/zerver/login.html:131
 msgid "or Choose a user"
-msgstr "or 유저선택"
+msgstr "또는 유저선택"
 
 #: templates/zerver/login.html:134
 msgid "Administrators"
@@ -1964,61 +1984,61 @@ msgstr ""
 #: zerver/lib/validator.py:38
 #, python-format
 msgid "%s is not a string"
-msgstr "%s 은 문자열이 아닙니다"
+msgstr "%s 은 string 이 아닙니다"
 
 #: zerver/lib/validator.py:44
 #, python-format
 msgid "%s is not an integer"
-msgstr ""
+msgstr "%s 은 integer 가 아닙니다."
 
 #: zerver/lib/validator.py:50
 #, python-format
 msgid "%s is not a boolean"
-msgstr ""
+msgstr "%s 은 boolean 이 아닙니다."
 
 #: zerver/lib/validator.py:68
 #, python-format
 msgid "%s is not a list"
-msgstr ""
+msgstr "%s 은 list 가 아닙니다."
 
 #: zerver/lib/validator.py:71
 #, python-format
 msgid "%(container)s should have exactly %(length)s items"
-msgstr ""
+msgstr "%(container)s 은 정확하게  %(length)s 의 items 을 가져야 합니다."
 
 #: zerver/lib/validator.py:89
 #, python-format
 msgid "%s is not a dict"
-msgstr ""
+msgstr "%s 은 dict 타입이 아닙니다."
 
 #: zerver/lib/validator.py:93
 #, python-format
 msgid "%(key_name)s key is missing from %(var_name)s"
-msgstr ""
+msgstr "%(key_name)s 키는 %(var_name)s 에서 찾을 수 없습니다."
 
 #: zerver/lib/validator.py:118
 #, python-format
 msgid "%s is not an allowed_type"
-msgstr ""
+msgstr "%s 은 혀용되지 않은 타입입니다."
 
 #: zerver/lib/validator.py:126
 #, python-format
 msgid "%(variable)s != %(expected_value)s (%(value)s is wrong)"
-msgstr ""
+msgstr "%(variable)s != %(expected_value)s 이면 (%(value)s 은 잘못되었습니다.)"
 
 #: zerver/middleware.py:293
 msgid "Internal server error"
-msgstr ""
+msgstr "내부 서버에러 발생"
 
 #: zerver/middleware.py:310
 #, python-format
 msgid "CSRF Error: %s"
-msgstr ""
+msgstr "CSRF 에러발생: %s"
 
 #: zerver/middleware.py:333
 #, python-format
 msgid "API usage exceeded rate limit, try again in %s secs"
-msgstr "API 사용이 허가한도를 초과하였습니다 다시 %s 초내에 시도하세요"
+msgstr "API 사용이 허가한도를 초과하였습니다 다시 %s 초 이내에 시도하세요"
 
 #: zerver/models.py:285
 msgid "Invalid characters in Emoji name"
@@ -2026,11 +2046,11 @@ msgstr "이모티콘명으로 무효한 문자입니다"
 
 #: zerver/tests/test_decorators.py:82
 msgid "13 is an unlucky number!"
-msgstr ""
+msgstr "13은 좋지않은 숫자 입니다!"
 
 #: zerver/tornadoviews.py:37
 msgid "You are not authorized to access this queue"
-msgstr "이큐에 접근권한이 없습니다"
+msgstr "이 queue에 접근 권한이 없습니다"
 
 #: zerver/views/__init__.py:305
 msgid "You must specify at least one email address."
@@ -2047,31 +2067,31 @@ msgstr "채널 %s 이 존재하지 않습니다. 초대장이 보내지지 않�
 
 #: zerver/views/__init__.py:401
 msgid "No REMOTE_USER set."
-msgstr ""
+msgstr "REMOTE_USER 를 설정하지 않았습니다."
 
 #: zerver/views/__init__.py:413
 msgid "No JSON web token passed in request"
-msgstr ""
+msgstr "JSON web token 이 request에 없습니다."
 
 #: zerver/views/__init__.py:415
 msgid "Bad JSON web token"
-msgstr ""
+msgstr "잘못된 JSON web token"
 
 #: zerver/views/__init__.py:419
 msgid "No user specified in JSON web token claims"
-msgstr ""
+msgstr "JSON web token claims 에 지정된 유저가 없습니다."
 
 #: zerver/views/__init__.py:422
 msgid "No domain specified in JSON web token claims"
-msgstr ""
+msgstr "JSON web token claims 에 지정된 도메인이 없습니다."
 
 #: zerver/views/__init__.py:434
 msgid "Bad JSON web token signature"
-msgstr ""
+msgstr "잘못된 JSON web token signature"
 
 #: zerver/views/__init__.py:436
 msgid "Realm not authorized for JWT login"
-msgstr ""
+msgstr "JWT login 권한을 가지지 않은 Realm 입니다."
 
 #: zerver/views/__init__.py:586 zerver/views/__init__.py:602
 msgid "Dev environment not enabled."

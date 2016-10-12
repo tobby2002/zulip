@@ -3253,7 +3253,7 @@ li.expanded_private_message {
 }
 
 #streams_header {
-    margin-right: 0px;
+    padding-right: 10px;
     padding-left: 10px;
 }
 
